@@ -7,7 +7,7 @@ public class RectangleInfotask3 extends Main{
             Scanner scanner = new Scanner(System.in);
 
             // Prompt the user to enter the lengths of the sides of the rectangle
-            System.out.println("Enter the lengths of sides of the rectangle:");
+            System.out.println("Enter the length of sides of the rectangle:");
             length = scanner.nextDouble();
             width = scanner.nextDouble();
 
