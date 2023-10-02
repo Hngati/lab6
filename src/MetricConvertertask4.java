@@ -6,7 +6,7 @@ public class MetricConvertertask4 extends Main{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Enter length in meters: "); // ask user to enter lenght
+        System.out.print("Enter length in meter: "); // ask user to enter lenght
         double meters = 0;
         boolean done = false;
 
