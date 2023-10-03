@@ -1,31 +1,29 @@
 import java.util.Scanner;
 
-public class RectangleInfotask3 extends Main{
+public class Main {
 
-        public static void main(String[] args) {
-            double length, width, diagonal;
-            Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
+                double height, width, diagonal;
+                Scanner scanner = new Scanner(System.in);
 
-            // Prompt the user to enter the lengths of the sides of the rectangle
-            System.out.println("Enter the length of sides of the rectangle:");
-            length = scanner.nextDouble();
-            width = scanner.nextDouble();
+                System.out.println("Enter the height and width  of sides of the rectangle:"); // ask user for length
+                height = scanner.nextDouble();
+                width = scanner.nextDouble();
 
-            // Check for valid inputs (both sides should be greater than 0)
-            if (length <= 0 || width <= 0) {
-                System.out.println("Enter valid input (both sides should be greater than 0).");
-            } else {
-                // Calculate the area of the rectangle (length x width)
-                double area = length * width;
-                System.out.println("Area of the rectangle is: " + area);
+                if (height <= 0 || width <= 0) { // sides should  be greater than zero
+                    System.out.println("Enter valid input (both sides should be greater than 0).");
+                } else {
+                    double area = height * width;  // Calculate the area of the rectangle (length x width)
+                    System.out.println("Area of the rectangle is: " + area);
+                    double perimeter = 2 * (width + height);
+                    System.out.println(" The perimeter is :"+ perimeter);
 
-                // Calculate the length of the diagonal using the Pythagorean theorem
-                diagonal = Math.sqrt(length * length + width * width);
-                System.out.println("The length of the diagonal: " + diagonal);
+                    diagonal = Math.sqrt(height * height + width * width); // Calculate the length of the diagonal using the Pythagorean
+                    System.out.println("The length of the diagonal: " + diagonal);
+                }
+
+                scanner.close(); // Close the scanner to release resources
             }
-
-            // Close the scanner to release resources
-            scanner.close();
         }
-    }
+
 
